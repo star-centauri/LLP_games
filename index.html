@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Modelo Page</title>
+
+        <link rel="stylesheet" href="assets/lib/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="navbar-collapse">
+                        <ul class="navbar-nav">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="view/principal.html"> Principal </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="view/download.html"> Downloads </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="view/lojaVirtual.html"> Loja Virtual </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="view/contato.html"> Contato </a>
+                          </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section id="boards" class="container"></section>
+            <footer class="blockquote text-center">
+              LLPGames.com.br - © 2019 - Todos os direitos reservados.
+            </footer>
+        </main>
+
+        <script src="assets/lib/jquery.min.js"></script>
+        <script>
+          $(function() {
+              $('.nav-link').on('click', function(e) {
+                  e.preventDefault();
+                  var href = $(this).attr('href');
+                  $("#boards").load(href);
+              });
+
+              $("#boards").load('view/principal.html');
+          });
+        </script>
+
+    </body>
+</html>

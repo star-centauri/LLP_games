@@ -1,0 +1,80 @@
+<article id="contato">
+    <div>
+        <h3>Nós envie suas dúvidas, sugestões ou críticas construtivas!</h3>
+        <p>Sua opinião é de extrema importância para a melhoria do jogo e do site.</p>
+        <span>* Todos os campos são obrigatórios.</span>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" class="form-control" id="nome">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">Por favor ensira um email válido, exemplo: meuemail@gmail.com</small>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" id="cidade">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="exampleFormControlSelect1">Estado</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <input type="text" class="form-control" id="assunto">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="5"></textarea>
+            </div>
+
+            <button class="btn btn-primary" id="enviar">Enviar</button>
+          </form>
+    </div>
+    <div>
+        <h3>Acesse nossas redes sociais!</h3>
+        <p>Aqui conterá facebook, telegram, zap, blog e etc</p>
+    </div>
+</article>
+
+<script>
+    $(function() {
+        $('#enviar').on('click', function() {
+            alert("Todas as informações vão ser enviadas");
+        });
+    });
+</script>
