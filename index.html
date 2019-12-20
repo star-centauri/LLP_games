@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Modelo Page</title>
+        <title>LLP GAMES - Principal</title>
 
         <link rel="stylesheet" href="assets/lib/bootstrap-4.4.1-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/index.css">
@@ -32,24 +32,48 @@
                     </div>
                 </nav>
             </header>
-            <section id="boards" class="container"></section>
+            <section id="boards" class="container">
+              <article id="principal">
+                <div class="containe-boaVinda">
+                    <h3>BEM-VINDO!</h3>
+                    <p>
+                        A LLP Game é um jogo online de mundo aberto que busca à diversão e integração dos jogadores. 
+                        Com missões, explorações e batalhas, uma coisa que você nunca terá é tédio! 
+                        Se você nunca jogou venha fazer parte deste universo!
+                    </p>
+                </div>
+                <div class="container-historia">
+                    <h3>HISTÓRIA</h3>
+                    <p>
+                        Aqui será contado à história do jogo, quando foi criado seu objetivo de criação 
+                        e o enredo de todo o jogo.
+                    </p>
+                </div>
+                <div>
+                    <h3>TIME LLP</h3>
+                    <ul>
+                        <li>
+                            Nome: Patrick Barbosa
+                            Função: Desenvolvedor
+                            Apresentação: ae meu jovem!
+                        </li>
+                        <li>
+                            Nome: Deli
+                            Função: Criação de conteúdo e gerente do projeto
+                            Apresentação: Sejam todos bem vindo!
+                        </li>
+                        <li>
+                            Nome: Edilson
+                            Função: gerente do projeto e criação de audio
+                            Apresentação: Fala rapazeada nova!
+                        </li>
+                    </ul>
+                </div>
+              </article>
+            </section>
             <footer class="blockquote text-center">
               LLPGames.com.br - © 2019 - Todos os direitos reservados.
             </footer>
         </main>
-
-        <script src="assets/lib/jquery.min.js"></script>
-        <script>
-          $(function() {
-              $('.nav-link').on('click', function(e) {
-                  e.preventDefault();
-                  var href = $(this).attr('href');
-                  $("#boards").load(href);
-              });
-
-              $("#boards").load('view/principal.html');
-          });
-        </script>
-
     </body>
 </html>
